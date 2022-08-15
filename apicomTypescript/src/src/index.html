@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/938418842b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/chuckdraw-removebg-preview.png" height="40px" width="80px" alt="">
+            Chuck Norris Jokes Page
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/phrasesbycateg.html">Phrases per Category</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Acesses per day</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Profile
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" 
+                      target="_blank" href="https://github.com/LukasdeSouza">Github</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" 
+                      target="_blank" href="https://www.linkedin.com/in/lucas-de-souza-silva-227185211/">LinkedIn</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" 
+                      target="_blank" href="https://api.whatsapp.com/send?phone=5534992461158">Whatsapp</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div style="margin-top:50px;margin-left:1200px;">
+        <i class="fa-solid fa-arrow-up-short-wide" 
+      style="font-size: 30px;"></i>
+      </div>
+      
+
+
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            <img src="../assets//zany-face-svgrepo-com.svg" class="rounded me-2" alt="..." style="width:30px;height: 30px;">
+            <strong class="me-auto">Chuck's Page</strong>
+            <small>1 second ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    <div class="toast-body" id="phrase">
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="themePhrase">
+    <h1>Chuck Norris Jokes !</h1>
+</div>
+
+    
+    
+    <img src="https://cdn.dribbble.com/users/1774513/screenshots/3726127/media/ef86424ae75426acfa624dfadcabda14.jpg?compress=1&resize=400x300" alt="">
+
+    <div>
+        <button type="button" class="btn btn-dark" id="liveToastBtn"
+      onclick="enviarRequisicao()"><i class="fa-solid fa-hand-back-fist" style="margin-right:8px"></i>
+      Pick me a random joke !</button>
+    </div>
+
+    <div>
+        <button class="googleTranslate"><img src="../assets/google-svgrepo-com.svg" alt="" style="margin-right:8px">
+            <a target="_blank" href="https://translate.google.com.br/"> Use Google Translate </a></button>
+    </div>
+    
+    
+        <div>
+            <button class="downloadButton">
+                <img src="../assets/download-svgrepo-com.svg" alt="" style="height:20px;width:20px">
+                <a target="_blank" style="text-decoration: none; "href="https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=pt">
+                    Or click here to download Google Translate extension, if you prefer.
+                </a>
+            </button>
+        </div>
+            
+   
+    <br>
+    
+    
+     
+    <br><br><b><p id="phrase"></p></b>
+    <br><br><span style="color: blueviolet;"id="anotherphrase"></span>
+
+
+    <footer>
+        &copy; All rights reserved to @LukasdeSouza and to the API creators.
+        <div style="display: flex; justify-content: center; ">
+            
+                <a href="https://github.com/LukasdeSouza" 
+                target="_blank"
+                style="padding:10px; text-decoration: none;">
+                  <i class="fa-brands fa-github" style="
+                  margin-right:3px"></i>Github</a>
+
+                <a href="https://www.linkedin.com/in/lucas-de-souza-silva-227185211/" 
+                target="_blank"
+                style="padding:10px ; text-decoration: none;">
+                  <i class="fa-brands fa-linkedin-in" style="color: rgb(69, 131, 224)65, 192);
+                  margin-right:3px"></i>Linked</a>
+
+                <a href="https://api.whatsapp.com/send?phone=5534992461158" style="padding:10px; text-decoration: none;">
+                  <i class="fa-brands fa-whatsapp"style="
+                  margin-right:3px"></i> Whatsapp</a>
+
+                <a href="https://t.me/LukasdeSouza" 
+                target="_blank"
+                style="padding:10px; text-decoration: none;">
+                  <i class="fa-brands fa-telegram"style="
+                  margin-right:3px"></i>Telegram</a>
+
+                <a href="mailto:lucas_souza.s11@hotmail.com" 
+                target="_blank"
+                style="padding:10px; text-decoration: none;">
+                <i class="fa-solid fa-envelope-circle-check" style="
+                margin-right:3px"></i>lucas_souza.s11@hotmail.com</a>
+                  
+            
+
+        </div>
+        
+        <a href="https://api.chucknorris.io/" style="text-decoration:none">Chuck Norris API</a>
+    </footer>
+    
+    <script src="consumer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

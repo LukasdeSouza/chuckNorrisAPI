@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+    padding:20px;
+    background-color: rgba(250, 220, 50, 0.938);
+}
+
+.googleTranslate, .downloadButton{
+    color: white;
+    margin-top: 15px;
+    background-color: rgba(14, 13, 13, 0.89);
+    border:0.6px, black;
+    border-radius: 5px;
+    padding:6px;
+}
+
+.googleTranslate:hover{
+    background-color:white;
+    color: black;
+    transition: all ease 0.5s;
+}
+
+.downloadButton:hover{
+    background-color: white;
+    transition: all ease 0.5s;
+}
+.downloadButton a:hover{
+    color: black;
+    transition: all ease 0.5s;
+}
+
+.downloadButton a {
+    color:rgb(255, 255, 255);
+}
+
+.googleTranslate a{
+    text-decoration: none;
+    
+}
+
+.themePhrase{
+    margin-top: 50px;
+}
+
+.themePhrase h1{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size:70px;
+
+}
+footer{
+    color: black;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+

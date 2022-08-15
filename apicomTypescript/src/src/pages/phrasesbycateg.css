@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+body{
+    background-color: rgb(255 58 8);
+}
+.googleTranslate, .downloadButton{
+    color: white;
+    margin-top: 15px;
+    background-color: rgba(14, 13, 13, 0.795);
+    border:0.6px, black;
+    border-radius: 5px;
+    padding:6px;
+}
+
+.googleTranslate:hover{
+    background-color:white;
+    color: black;
+    transition: all ease 0.5s;
+}
+
+.downloadButton:hover{
+    background-color: white;
+    transition: all ease 0.5s;
+}
+.downloadButton a:hover{
+    color: black;
+    transition: all ease 0.5s;
+}
+
+.downloadButton a {
+    color:rgb(255, 255, 255);
+}
+
+.googleTranslate a{
+    text-decoration: none;
+    
+}
+#amountofJokes{
+    margin-left:500px;
+}
+.themePhrase{
+    margin-top: 50px;
+}
+.themePhrase h1{
+    color: white;
+    text-align: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size:70px;
+
+}
+
+footer{
+    text-align: center;
+    color: black;
+    font-family: 'Mouse Memoirs', sans-serif;
+}

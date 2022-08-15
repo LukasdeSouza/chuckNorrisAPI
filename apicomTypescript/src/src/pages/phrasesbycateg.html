@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/938418842b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./phrasesbycateg.css">
+    <title>All the Phrases - Chuck's Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../../assets/chuckdraw-removebg-preview.png" height="40px" width="80px" alt="">
+            Chuck Norris Jokes Pages
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/allthephrases.html">All the Phrases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Phrases per Category</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Acesses per day</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Profile
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Github</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br><div class="themePhrase">
+        <h1>Chuck Norris Jokes</h1>
+        <div class="themePhrase">
+          <h1>See the jokes by category !</h1>
+        
+          <select class="form-select" aria-label="Default select example"
+          id="sel" onclick="jokesbyCategory()">
+              <option value="animal">Animal</option>
+              <option value="career">Career</option>
+              <option value="celebrity">Celebrity</option>
+              <option value="dev">Dev</option>
+              <option value="explicity">Explicity</option>
+              <option value="fashion">Fashion</option>
+              <option value="food">Food</option>
+              <option value="history">History</option>
+              <option value="money">Money</option>
+              <option value="movie">Movie</option>
+              <option value="music">Music</option>
+              <option value="political">Political</option>
+              <option value="religion">Religion</option>
+              <option value="science">Science</option>
+              <option value="sport">Sport</option>
+              <option value="travel">Travel</option>
+            </select>
+
+            <br><h5 id="showPhrasesbyCateg" style="text-align: center;">
+            
+            </h5>
+  
+          <!-- <br><button type="button" class="btn btn-dark">
+              <i class="fa-solid fa-magnifying-glass"style="margin-right:8px"></i>
+              Search for this category !</button> -->
+          </div>    
+        <img src="../../assets/westerngif.gif" alt="" style="margin-left: 200px;">
+    </div>
+    
+    
+
+      <br><p>
+        <a class="btn btn-dark" data-bs-toggle="collapse" id="amountofJokes"
+        onclick="countofPhrases()" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          See the amount of jokes we have
+        </a>
+      <br><b><h3 id="count" style="text-align: center; color: white;transition: all ease 0.5s;"></h3></b> 
+
+
+      <footer>
+        &copy; All rights reserved to @LukasdeSouza and to the API creators.
+        <div style="display: flex; justify-content: center; ">
+            
+                <a href="https://github.com/LukasdeSouza" 
+                target="_blank"
+                style="padding:10px; text-decoration: none;color: white;">
+                  <i class="fa-brands fa-github" style="
+                  margin-right:3px"></i>Github</a>
+
+                <a href="https://www.linkedin.com/in/lucas-de-souza-silva-227185211/" 
+                target="_blank"
+                style="padding:10px ; text-decoration: none; color: white;">
+                  <i class="fa-brands fa-linkedin-in" style="
+                  margin-right:3px"></i>Linked</a>
+
+                <a href="https://api.whatsapp.com/send?phone=5534992461158" 
+                style="padding:10px; text-decoration: none; color: white;">
+                  <i class="fa-brands fa-whatsapp"style="
+                  margin-right:3px"></i> Whatsapp</a>
+
+                <a href="https://t.me/LukasdeSouza" 
+                target="_blank"
+                style="padding:10px; text-decoration: none; color: white;">
+                  <i class="fa-brands fa-telegram"style="
+                  margin-right:3px"></i>Telegram</a>
+
+                <a href="mailto:lucas_souza.s11@hotmail.com" 
+                target="_blank"
+                style="padding:10px; text-decoration: none; color: white;">
+                <i class="fa-solid fa-envelope-circle-check" style="
+                margin-right:3px"></i>lucas_souza.s11@hotmail.com</a>
+                  
+            
+
+        </div>
+        
+        <a href="https://api.chucknorris.io/" style="text-decoration:none;color: white;">Chuck Norris API</a>
+    </footer>
+    
+      
+        
+    
+      <script src="../countofphrases.js"></script>
+      
+      
+</body>
+</html>
